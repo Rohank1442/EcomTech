@@ -1,0 +1,151 @@
+/* .design{ */
+/* border : 2px solid black;
+    position: relative;
+    width : 80%;  */
+/* margin :auto;
+    margin : 0;
+     padding : 10px 10px;
+    border-radius: 20px;
+    background-color: white; */
+/* }  */
+
+.create {
+    background-color: #eef1f5;
+}
+
+
+.page{
+    margin-top: 10%;
+}
+
+.admin {
+    /* margin-top: 20%;
+        border : 2px solid black; */
+    /* width : 60%;  */
+    /* margin :auto; */
+    margin: 0;
+    padding: 10px 10px;
+    /* border-radius: 20px; */
+    background-color: white;
+    /* justify-content: center;
+        text-align: center; */
+    /* margin-left: 15%; */
+
+}
+
+.adjust {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.list-group {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.back{
+    
+    /* width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; */
+    border-radius: 5%;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+
+/* .page {
+    background-color: #eef1f5;
+    width:100%;
+    height:100%;
+} */
+body{
+    background-color: #eef1f5;
+}
+
+.text-animation {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    color:#2874f0;
+    display: block;
+    letter-spacing: 0.15em;
+    animation: typing 3s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+  }
+  
+.text-animation1 {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    color:red;
+    display: block;
+    letter-spacing: 0.15em;
+    animation: typing 3s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+  }
+  
+.text-animation2 {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    color:#1abc9c;
+    display: block;
+    letter-spacing: 0.15em;
+    animation: typing 3s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange; /* Replace with your preferred color */
+    }
+  }
+  
+
+
+
+
+
+
+/* .list-group-item:hover {
+    background-color: red;
+  } */
+
+
+
+
+
+
+
+.dashboard {
+    background-color: #F1F1F1;
+}
+
+.result {
+    color: gray;
+    font-weight: 700;
+    font-size: 26px;
+    /* margin-top: 0.5rem; */
+}
+
+.more {
+    background-color: #2874f0;
+}
+
+.cart {
+    margin-top: 0px;
+}
