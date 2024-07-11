@@ -57,7 +57,6 @@ export const updateCategoryController = async (req, res) => {
     }
 };
 
-
 export const categoryControlller = async (req, res) => {
     try {
         const category = await categoryModel.find({});
@@ -75,7 +74,6 @@ export const categoryControlller = async (req, res) => {
         });
     }
 };
-
 
 export const singleCategoryController = async (req, res) => {
     try {
@@ -95,7 +93,6 @@ export const singleCategoryController = async (req, res) => {
     }
 };
 
-
 export const deleteCategoryCOntroller = async (req, res) => {
     try {
         const { id } = req.params;
@@ -113,5 +110,3 @@ export const deleteCategoryCOntroller = async (req, res) => {
         });
     }
 };
-
-

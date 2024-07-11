@@ -63,7 +63,6 @@ export const loginController = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-
     if (!email || !password) {
       return res.status(404).send({
         success: false,
@@ -104,11 +103,6 @@ export const loginController = async (req, res) => {
       },
       token,
     });
-
-
-
-
-
   }
   catch (error) {
     console.log(error);
@@ -120,7 +114,6 @@ export const loginController = async (req, res) => {
 
   }
 }
-
 
 export const forgotPasswordController = async (req, res) => {
   try {
@@ -158,8 +151,6 @@ export const forgotPasswordController = async (req, res) => {
     });
   }
 };
-
-
 
 export const testController = (req, res) => {
   try {
@@ -203,7 +194,6 @@ export const updateProfileController = async (req, res) => {
     });
   }
 };
-
 
 export const getOrdersController = async (req, res) => {
   try {
@@ -259,6 +249,3 @@ export const orderStatusController = async (req, res) => {
     });
   }
 };
-
-
-

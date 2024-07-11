@@ -8,7 +8,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-
 var gateway = new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox,
     merchantId: process.env.BRAINTREE_MERCHANT_ID,
@@ -16,15 +15,12 @@ var gateway = new braintree.BraintreeGateway({
     privateKey: process.env.BRAINTREE_PRIVATE_KEY,
 });
 
-
-
-
 export const createProductController = async (req, res) => {
     try {
         const { name, description, price, category, quantity, shipping } =
             req.fields;
         const { photo } = req.files;
-       
+
         switch (true) {
             case !name:
                 return res.status(500).send({ error: "Name is Required" });
@@ -62,7 +58,6 @@ export const createProductController = async (req, res) => {
         });
     }
 };
-
 
 export const getProductController = async (req, res) => {
     try {
@@ -143,7 +138,6 @@ export const deleteProductController = async (req, res) => {
     }
 };
 
-
 export const updateProductController = async (req, res) => {
     try {
         const { name, description, price, category, quantity, shipping } =
@@ -213,7 +207,6 @@ export const productFiltersController = async (req, res) => {
     }
 };
 
-
 export const productCountController = async (req, res) => {
     try {
         const total = await productModel.find({}).estimatedDocumentCount();
@@ -230,7 +223,6 @@ export const productCountController = async (req, res) => {
         });
     }
 };
-
 
 export const productListController = async (req, res) => {
     try {
@@ -278,7 +270,6 @@ export const searchProductController = async (req, res) => {
     }
 };
 
-
 export const realtedProductController = async (req, res) => {
     try {
         const { pid, cid } = req.params;
@@ -303,7 +294,6 @@ export const realtedProductController = async (req, res) => {
         });
     }
 };
-
 
 export const productCategoryController = async (req, res) => {
     try {
@@ -370,14 +360,3 @@ export const brainTreePaymentController = async (req, res) => {
         console.log(error);
     }
 };
-
-
-
-
-
-
-
-
-
-
-
